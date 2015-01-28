@@ -55,7 +55,7 @@ name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-a
 </div>
 
            
-    <div id="jqt" class="supports3d portrait" style="min-height: 781px;">
+    <div id="jqt" class="supports3d portrait animating" style="min-height: 781px;">
     	<div id="home" class="">
             <div class="toolbar">
                 <h1>inniAccounts</h1>
@@ -207,16 +207,18 @@ IeC18hSXRlbUNvdW50ZmQCBQ8PZDwrAAYAZGTABzs9s+O5XRFKG2Scw2JOwcPRCgjN04tXCCrMGcsFwg
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="202200F8">
 </div></form>
-</div><div id="timesheetform" class="current" style="top: 0px;">
+</div><div id="timesheetform" class="slideleft in current" style="top: 0px;">
 <form method="post" action="entertimeslip.aspx?a=3GaMVrE3CEbPyvJDlzaAAA%3d%3d" id="formtimesheet">
 <div class="aspNetHidden">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" 
 
-value="/wEPDwUKMTI5ODU4MTYwNQ9kFgICAQ9kFgICAw9kFgYCAw8PFggeBFRleHQFCjI4LzAxLzIwMTUeBE1vZGULKiVTeXN0ZW0uV2ViLlVJLldlYkNvbnRyb2xzLlRleHRCb3hNb2RlAB
+value="/wEPDwUKMTI5ODU4MTYwNQ9kFgICAQ9kFgICAw9kFgoCAQ8WAh4HVmlzaWJsZWdkAgMPDxYIHgRUZXh0BQoyOC8wMS8yMDE1HgRNb2RlCyolU3lzdGVtLldlYi5VSS5XZWJDb250cm
 
-4IQ3NzQ2xhc3MFB3RleHRib3geBF8hU0ICAmRkAgUPDxYGHwELKwQAHwIFB3RleHRib3gfAwICZGQCBxAQDxYCHgtfIURhdGFCb3VuZGdkEBUBDlBsZWFzZSBTZWxlY3Q6FQEEJFBTJBQrAwF
+9scy5UZXh0Qm94TW9kZQAeCENzc0NsYXNzBQd0ZXh0Ym94HgRfIVNCAgJkZAIFDw8WCB8CCysEAB8DBQd0ZXh0Ym94HwQCAh8BZWRkAgcQEA8WAh4LXyFEYXRhQm91bmRnZBAVAQ5QbGVhc2U
 
-nFgFmFCsAAmRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMQ2xhaW1NaWxlYWdla5Y7cr3CZYSpYcmwxdJy742Ndc60o9UK7FJQ4bidFOA=">
+gU2VsZWN0OhUBBCRQUyQUKwMBZxYBZhQrAAJkZGQCCQ8QDxYCHgdDaGVja2VkaGRkZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFDENsYWltTWlsZWFnZaaEH
+
++FZU/TW5hfA/f8noV0vPoxIybN5vL8tpuj2tIWA">
 </div>
 
 
@@ -228,6 +230,11 @@ nFgFmFCsAAmRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMQ2xhaW1NaWxlYWd
         <a href="#timelist" class="btn" title="back">back</a>
     </div>
     
+    
+       <ul class="rounded">
+            <li style="color:#AAA;">Whoops...<br>
+            <span style="font-weight:normal;">We couldn't save your timesheet entry.  Please check your entries:</span></li>
+        </ul>
         
     
     <ul class="edit rounded">
@@ -235,9 +242,9 @@ nFgFmFCsAAmRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMQ2xhaW1NaWxlYWd
     <li><div class=" col_4">
 <label for="Date">Date</label><input name="Date" type="text" value="28/01/2015" id="Date" class="textbox"></div></li>
     <li><div class=" col_4">
-<label for="Hours">Hours</label><input name="Hours" type="text" id="Hours" class="textbox"></div></li>
+<label for="Hours" class="error">Hours</label><input name="Hours" type="text" id="Hours" class="textbox error"></div></li>
     <li><div class=" col_4">
-<label for="ContractTaskID">Task</label><select name="ContractTaskID" id="ContractTaskID">
+<label for="ContractTaskID" class="error">Task</label><select name="ContractTaskID" id="ContractTaskID" class="error">
 	<option value="$PS$" selected="selected">Please Select:</option>
 
 </select></div></li>
@@ -245,7 +252,7 @@ nFgFmFCsAAmRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMQ2xhaW1NaWxlYWd
 <span class="checkbox"><input id="ClaimMileage" type="checkbox" name="ClaimMileage"></span></div></li>
     
     </ul>                    
-    <a style="margin:0 10px;" href="#" class="dissolve submit whiteButton">Save Entry</a>
+    <a style="margin:0 10px;" href="#" class="dissolve submit whiteButton ">Save Entry</a>
    
    
 
@@ -254,9 +261,9 @@ nFgFmFCsAAmRkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMQ2xhaW1NaWxlYWd
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D3694C3E">
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" 
 
-value="/wEdAAWaGsuF5i1XOhBzdVkb13pgTEr6fCljs5jPQPYFJbhCOU1a4QLFohUU90PoyXEMqx7C3Ky1umF8OW3skCpsN1Lb8f9C8L0eAkNfWrDM572OLPT7CoJKbyQWlUf1es96CZEpp0
+value="/wEdAAW11YOSxiGEuawWWvedJsHJTEr6fCljs5jPQPYFJbhCOU1a4QLFohUU90PoyXEMqx7C3Ky1umF8OW3skCpsN1Lb8f9C8L0eAkNfWrDM572OLB5uIEBExV6WKpCEIwkFq8yzHb
 
-FPEdasomBPE1DnRG9z">
+6I0Vo/qkNoqgrWqL2u">
 </div></form>
 </div></div>
     
